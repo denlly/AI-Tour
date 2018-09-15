@@ -1,0 +1,5 @@
+## usage
+
+```shell
+make html
+```
