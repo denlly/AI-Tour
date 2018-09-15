@@ -20,6 +20,10 @@ The plugin supports i18n for the month and weekday names and the ``weekStart`` o
 
 Right-to-left languages may also include ``rtl: true`` to make the calendar display appropriately.
 
+
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
+
 If your browser (or those of your users) is displaying characters wrong, chances are the browser is loading the javascript file with a non-unicode encoding.  Simply add ``charset="UTF-8"`` to your ``script`` tag:
 
 .. code-block:: html
