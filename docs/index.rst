@@ -1,23 +1,19 @@
-.. AI-Tour documentation master file, created by
-   sphinx-quickstart on Mon Sep 17 00:57:55 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. toctree::
+    :caption: Content Documentation
+    :maxdepth: 2
 
-Welcome to AI-Tour's documentation!
-===================================
+    demo
+    demo2
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
+    :numbered:
+    :caption: Demo Documents
 
-   demo
-   pythons/demo
-
-
-
+    demo/demo1
+    demo/demo2
+    demo/demo3
+    demo/demo4
 
 Indices and tables
 ==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
