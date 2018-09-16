@@ -1,28 +1,20 @@
-.. include:: ../README.rst
+.. AI-Tour documentation master file, created by
+   sphinx-quickstart on Mon Sep 17 00:57:55 2018.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to AI-Tour's documentation!
+===================================
 
 .. toctree::
-   :caption: Theme Documentation
    :maxdepth: 2
-
-   installing
-   configuring
-   changelog
-   contributing
+   :caption: Contents:
 
 
-.. toctree::
-    :maxdepth: 2
-    :numbered:
-    :caption: Demo Documents
 
-    demo/structure
-    demo/demo
-    demo/lists_tables
-    demo/api
+Indices and tables
+==================
 
-.. toctree::
-    :maxdepth: 3
-    :numbered:
-    :caption: This is an incredibly long caption for a long menu
-
-    demo/long
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
