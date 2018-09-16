@@ -1,0 +1,9 @@
+site_name: AI-Tour
+copyright: Denlly 2018
+# repo_url: https://github.com/docunid/readthemanuals.md/
+docs_dir: 'docs'
+pages:
+- Home: index.md
+- readthedocs: readthedocs.md
+- About: about.md
+theme: readthedocs
