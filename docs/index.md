@@ -1,27 +1,9 @@
-README
-======
+# Read The Eximple Docs
 
-Content
--------
-* [Read The Docs](readthedocs.md)
-* [About](about.md)
-* [Test](test.md)
+[View On Github](https://docunid.github.io/).
 
-Overview
---------
-This is a test case about building a HTML style documentation based on Markdown or reStrcutruredText maintained from github.
+## Welcome
 
-The goal is:
+"No Techno Mumbo Jumbo (although we're good at it). We keep your automation uncluttered and simple."
 
-* To have, build and mantain all the documentation in github.
-* Create a new documentation site in [Read The Docs](https://readthedocs.org).
-* Connect the documentation site with the repository.
-* Build the documetation as HTML web and PDF downloadable.
-* Repository and Documenation site should be able to be setup as private sites.
-
-See [Read the docs](readthedocs.md) documentation to get all the information.
-See `readthedocs`_ documentation to get all the information.
-
-Changelog
----------
-chaaaacho
+Well, as long as you've come this far: here you'll find some techno ramblings. Enjoy. Or not :)

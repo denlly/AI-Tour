@@ -1,5 +1,0 @@
-About
------
-
-pythonGuide
-About...
