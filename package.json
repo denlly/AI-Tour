@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-datepicker",
+  "name": "AI-Tour",
   "description": "A datepicker for Bootstrap",
   "version": "1.8.0",
   "license": "Apache-2.0",
@@ -16,9 +16,9 @@
     "LICENSE"
   ],
   "homepage": "https://github.com/uxsolutions/bootstrap-datepicker",
-  "author": "Andrew Rowls <eternicode@gmail.com>",
+  "author": "Denlly <fan91163@gmail.com>",
   "scripts": {
-    "test": "grunt test"
+   "test": "grunt test"
   },
   "repository": {
     "type": "git",
