@@ -7,7 +7,6 @@
 
 .. toctree::
     :maxdepth: 2
-    :numbered:
     :caption: Demo Documents
 
     demo/demo1
