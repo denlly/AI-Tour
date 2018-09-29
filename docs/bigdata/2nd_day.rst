@@ -116,10 +116,10 @@ Hadoop 安装
     // step 9 创建mapred-site.xml
     > vi etc/hadoop/mapred-site.xml
 <configuration>
-    <property>
-        <name>mapreduce.framework.name</name>
-        <value>yarn</value>
-    </property>
+<property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+</property>
 </configuration>
 
     // step 10 配置yarn-site.xml
