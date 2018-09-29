@@ -53,5 +53,5 @@ Python 的特性
 
 找到学习资料
 ~~~~~~~~~~~~~~~
-
+【TODO】
 .. _Better-Software-Faster-Practices-Prototyping-ebook: http://www.amazon.com/Better-Software-Faster-Practices-Prototyping-ebook/dp/B00L2GR7LQ//httpwwwtuto0a-20

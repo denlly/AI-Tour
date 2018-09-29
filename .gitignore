@@ -1,1 +1,9 @@
 _build/
+
+package.json
+
+yarn.lock
+
+node_modules/
+
+gulpfile.js

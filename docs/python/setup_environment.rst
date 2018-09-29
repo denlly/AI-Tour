@@ -5,13 +5,12 @@
 ~~~~~~~~~~~~~~~~~~~
 
     * Unix (Solaris, Linux, FreeBSD, AIX, HP/UX, SunOS, IRIX, etc.)
-    * Win 9x/NT/2000
+    * Windows
     * Macintosh (Intel, PPC, 68K)
     * OS/2
     * DOS (multiple versions)
     * PalmOS
     * Nokia mobile phones
-    * Windows CE
     * Acorn/RISC OS
     * BeOS
     * Amiga
@@ -51,13 +50,13 @@ Unix / Linux
 
 安装完成后设置
 
-    * 在csh shell中 - 键入setenv PATH“$ PATH：/usr / local / bin / python”并按Enter键。
+    * 在csh shell中 - 键入setenv PATH“$ PATH：/usr/local/bin/python”并按Enter键。
 
-    * 在bash shell（Linux）中 - 键入export ATH =“$ PATH：/ usr / local / bin / python”并按Enter键。
+    * 在bash shell（Linux）中 - 键入export PATH =“$PATH:/usr/local/bin/python”并按Enter键。
 
-    * 在sh或ksh shell中 - 键入PATH =“$ PATH：/ usr / local / bin / python”并按Enter键。
+    * 在sh或ksh shell中 - 键入PATH =“$ PATH:/usr/local/bin/python”并按Enter键。
 
-注 - / usr / local / bin / python是Python目录的路径
+注 - /usr/local/bin/python是Python目录的路径
 
 windows
 ----------
