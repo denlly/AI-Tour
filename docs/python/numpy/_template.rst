@@ -9,15 +9,15 @@
 summary
 -------------
 
-    {{ data.summary }}
+    {{ tornado.escape.xhtml_unescape(data.summary) }}
 
 Parameters
 ----------------
 
 {% for param in data.params %}
--  **{{ param.name }}** : {{ param.type }}
-    {{ param.desc }}
-    {{ param.notice }}
+-  **{{ tornado.escape.xhtml_unescape(param.name) }}** : {{ tornado.escape.xhtml_unescape(param.type) }}
+    {{ ptornado.escape.xhtml_unescape(aram.desc) }}
+    {{ tornado.escape.xhtml_unescape(param.notice) }}
 {% end %}
 
 -  **object**: array_like 
@@ -59,6 +59,7 @@ note
 examples
 -----------
 ::
+
     >>> np.array([1, 2, 3])
     array([1, 2, 3])
 

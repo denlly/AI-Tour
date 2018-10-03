@@ -11,8 +11,13 @@ Practice。在最后一部分是选读部分，算是职场生涯的一些心路
 
     python/overview
     python/setup_environment
-    python/numpy/array
-    python/numpy/numpy.zeros_like
+
+    .. toctree::
+
+        :caption: numpy
+        :maxdepth: 3
+        python/numpy/array
+        python/numpy/numpy.zeros_like
 
 .. toctree::
     :maxdepth: 2
