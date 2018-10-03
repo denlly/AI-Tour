@@ -16,8 +16,8 @@ Parameters
 
 {% for param in data.params %}
 -  **{{ tornado.escape.xhtml_unescape(param.name) }}** : {{ tornado.escape.xhtml_unescape(param.type) }}
-    {{ ptornado.escape.xhtml_unescape(aram.desc) }}
-    {{ tornado.escape.xhtml_unescape(param.notice) }}
+    {{ tornado.escape.xhtml_unescape(param.desc) }}
+    {{ tornado.escape.xhtml_unescape(param.notice }}
 {% end %}
 
 -  **object**: array_like 
