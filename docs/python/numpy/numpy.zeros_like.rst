@@ -1,17 +1,53 @@
-numpy.array
+
+numpy.zeros_like
 ===================
 
 ::
 
-    numpy.array(object, dtype=None, copy=True, order='K', subok=False, ndmin=0)
+    
+numpy.zeros_like(a, dtype=None, order=&#39;K&#39;, subok=True)
 
 summary
 -------------
 
-    创建一个 array
+    Return an array of zeros with the same shape and type as a given array.
 
 Parameters
 ----------------
+
+
+-  **&lt;strong&gt;a&lt;/strong&gt;** : &lt;span class=&quot;classifier&quot;&gt;array_like&lt;/span&gt;
+    &lt;dd&gt;&lt;p class=&quot;first last&quot;&gt;The shape and data-type of &lt;em class=&quot;xref py py-obj&quot;&gt;a&lt;/em&gt; define these same attributes of
+the returned array.&lt;/p&gt;
+&lt;/dd&gt;
+    
+
+-  **&lt;strong&gt;dtype&lt;/strong&gt;** : &lt;span class=&quot;classifier&quot;&gt;data-type, optional&lt;/span&gt;
+    &lt;dd&gt;&lt;p class=&quot;first&quot;&gt;Overrides the data type of the result.&lt;/p&gt;
+&lt;div class=&quot;last versionadded&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;versionmodified&quot;&gt;New in version 1.6.0.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/dd&gt;
+    
+
+-  **&lt;strong&gt;order&lt;/strong&gt;** : &lt;span class=&quot;classifier&quot;&gt;{‘C’, ‘F’, ‘A’, or ‘K’}, optional&lt;/span&gt;
+    &lt;dd&gt;&lt;p class=&quot;first&quot;&gt;Overrides the memory layout of the result. ‘C’ means C-order,
+‘F’ means F-order, ‘A’ means ‘F’ if &lt;em class=&quot;xref py py-obj&quot;&gt;a&lt;/em&gt; is Fortran contiguous,
+‘C’ otherwise. ‘K’ means match the layout of &lt;em class=&quot;xref py py-obj&quot;&gt;a&lt;/em&gt; as closely
+as possible.&lt;/p&gt;
+&lt;div class=&quot;last versionadded&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;versionmodified&quot;&gt;New in version 1.6.0.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/dd&gt;
+    
+
+-  **&lt;strong&gt;subok&lt;/strong&gt;** : &lt;span class=&quot;classifier&quot;&gt;bool, optional.&lt;/span&gt;
+    &lt;dd&gt;&lt;p class=&quot;first last&quot;&gt;If True, then the newly created array will use the sub-class
+type of ‘a’, otherwise it will be a base-class array. Defaults
+to True.&lt;/p&gt;
+&lt;/dd&gt;
+    
+
 
 -  **object**: array_like 
     数组，公开数组接口的任何对象，__array__方法返回数组的对象，或任何（嵌套）序列。

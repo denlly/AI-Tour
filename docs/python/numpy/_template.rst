@@ -1,17 +1,24 @@
-numpy.array
+{% import tornado %}
+{{ data.title }}
 ===================
 
 ::
 
-    numpy.array(object, dtype=None, copy=True, order='K', subok=False, ndmin=0)
+    {{ tornado.escape.xhtml_unescape(data.method) }}
 
 summary
 -------------
 
-    创建一个 array
+    {{ data.summary }}
 
 Parameters
 ----------------
+
+{% for param in data.params %}
+-  **{{ param.name }}** : {{ param.type }}
+    {{ param.desc }}
+    {{ param.notice }}
+{% end %}
 
 -  **object**: array_like 
     数组，公开数组接口的任何对象，__array__方法返回数组的对象，或任何（嵌套）序列。

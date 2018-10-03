@@ -21,7 +21,8 @@ Hadoop 安装
 
 
 
-.. code::
+.. raw:: python
+
     // 
     > yum update
 
