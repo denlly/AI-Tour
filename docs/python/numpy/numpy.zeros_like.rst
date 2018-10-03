@@ -1,9 +1,9 @@
 
+
 numpy.zeros_like
 ===================
 
 ::
-
     
 numpy.zeros_like(a, dtype=None, order=&#39;K&#39;, subok=True)
 
@@ -16,68 +16,24 @@ Parameters
 ----------------
 
 
--  **&lt;strong&gt;a&lt;/strong&gt;** : &lt;span class=&quot;classifier&quot;&gt;array_like&lt;/span&gt;
-    &lt;dd&gt;&lt;p class=&quot;first last&quot;&gt;The shape and data-type of &lt;em class=&quot;xref py py-obj&quot;&gt;a&lt;/em&gt; define these same attributes of
-the returned array.&lt;/p&gt;
-&lt;/dd&gt;
-    
+-  **a** : array_like
+    The shape and data-type of a define these same attributes ofthe returned array.  
 
--  **&lt;strong&gt;dtype&lt;/strong&gt;** : &lt;span class=&quot;classifier&quot;&gt;data-type, optional&lt;/span&gt;
-    &lt;dd&gt;&lt;p class=&quot;first&quot;&gt;Overrides the data type of the result.&lt;/p&gt;
-&lt;div class=&quot;last versionadded&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;versionmodified&quot;&gt;New in version 1.6.0.&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/dd&gt;
-    
+-  **dtype** : data-type, optional
+    Overrides the data type of the result.New in version 1.6.0.  
 
--  **&lt;strong&gt;order&lt;/strong&gt;** : &lt;span class=&quot;classifier&quot;&gt;{‘C’, ‘F’, ‘A’, or ‘K’}, optional&lt;/span&gt;
-    &lt;dd&gt;&lt;p class=&quot;first&quot;&gt;Overrides the memory layout of the result. ‘C’ means C-order,
-‘F’ means F-order, ‘A’ means ‘F’ if &lt;em class=&quot;xref py py-obj&quot;&gt;a&lt;/em&gt; is Fortran contiguous,
-‘C’ otherwise. ‘K’ means match the layout of &lt;em class=&quot;xref py py-obj&quot;&gt;a&lt;/em&gt; as closely
-as possible.&lt;/p&gt;
-&lt;div class=&quot;last versionadded&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;versionmodified&quot;&gt;New in version 1.6.0.&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/dd&gt;
-    
+-  **order** : {‘C’, ‘F’, ‘A’, or ‘K’}, optional
+    Overrides the memory layout of the result. ‘C’ means C-order,‘F’ means F-order, ‘A’ means ‘F’ if a is Fortran contiguous,‘C’ otherwise. ‘K’ means match the layout of a as closelyas possible.New in version 1.6.0.  
 
--  **&lt;strong&gt;subok&lt;/strong&gt;** : &lt;span class=&quot;classifier&quot;&gt;bool, optional.&lt;/span&gt;
-    &lt;dd&gt;&lt;p class=&quot;first last&quot;&gt;If True, then the newly created array will use the sub-class
-type of ‘a’, otherwise it will be a base-class array. Defaults
-to True.&lt;/p&gt;
-&lt;/dd&gt;
-    
-
-
--  **object**: array_like 
-    数组，公开数组接口的任何对象，__array__方法返回数组的对象，或任何（嵌套）序列。
-
--  **dtype**: data-type, optional
-    数组所需的data-type。如果没有给出，那么类型将被确定为保持序列中的对象所需的最小类型。此参数只能用于‘upcast’数组。对于向下转换，请使用 .astype(t)方法。
-
-- **copy**: bool, optional
-    如果为True（默认值），则复制对象。否则，仅当__array__返回副本，obj是嵌套序列，或者需要副本以满足任何其他要求(dtype, order.)时，才会生成副本。
-
-- **order**: {‘K’, ‘A’, ‘C’, ‘F’}, optional
-    指定阵列的内存布局。如果object不是数组，则新创建的数组将按C顺序排列（行主要），除非指定了“F”，在这种情况下，它将采用Fortran顺序（专业列）。如果object是一个数组，则以下成立。
-    order	no copy	copy=True
-    ‘K’	unchanged	F & C order preserved, otherwise most similar order
-    ‘A’	unchanged	F order if input is F and not C, otherwise C order
-    ‘C’	C order	C order
-    ‘F’	F order	F order
-
-- **subok**: bool, optional
-    如果为True，则子类将被传递，否则返回的数组将被强制为基类数组（默认）。
-
-- **ndmin**: int, optional
-    指定结果数组应具有的最小维数。为满足此要求，将根据需要预先设置形状。
+-  **subok** : bool, optional.
+    If True, then the newly created array will use the sub-classtype of ‘a’, otherwise it will be a base-class array. Defaultsto True.  
 
 
 return 
 -----------
 
-    ndarray
-    满足指定要求的数组对象。
+-  **out** : ndarray
+    Array of zeros with the same shape and type as a.
 
 note
 ----------
@@ -87,7 +43,13 @@ note
 
 examples
 -----------
+
+
+
+
+
 ::
+
     >>> np.array([1, 2, 3])
     array([1, 2, 3])
 
@@ -140,19 +102,10 @@ Creating an array from sub-classes:
 see others
 -------------
 
-    empty_like
-    Return an empty array with shape and type of input.
-    ones_like
-    Return an array of ones with shape and type of input.
-    zeros_like
-    Return an array of zeros with shape and type of input.
-    full_like
-    Return a new array with shape of input filled with value.
-    empty
-    Return a new uninitialized array.
-    ones
-    Return a new array setting values to one.
-    zeros
-    Return a new array setting values to zero.
-    full
-    Return a new array of given shape filled with value.
+-  *empty_like* : Return an empty array with shape and type of input.
+
+-  *ones_like* : Return an array of ones with shape and type of input.
+
+-  *full_like* : Return a new array with shape of input filled with value.
+
+-  *zeros* : Return a new array setting values to zero.

@@ -44,6 +44,13 @@ class ApiDetail:
         self.seealsos = seealsos
         self.examples = examples
 
+# seealso 类
+class Seealso:
+    def __init__(self, title, desc,url):
+        self.title = title
+        self.desc = desc
+        self.url = url
+        
 
 class BingbgDownloader:
     _request_url = ''
@@ -82,22 +89,42 @@ class BingbgDownloader:
         param_descs = paramHtml.find_all("dd")
         params = []
         for i in range(len(param_names)):
-            param = ParamObj(name=param_names[i],type=param_types[i],desc=param_descs[i])
+            param = ParamObj(name=param_names[i].get_text(),type=param_types[i].get_text(),desc=param_descs[i].get_text().replace("\n", ""))
             params.append(param)
-        returns = functionHtml.find("dl",class_="last")
-        seealso = functionHtml.find("div",class_="seealso")
+        returnHtml = functionHtml.find("dl",class_="last")
+        return_dicts = returnHtml.find_all('strong')
+        return_types = returnHtml.find_all('span', class_="classifier")
+        return_descs = returnHtml.find_all('p')
+        returns = []
+        for y in range(len(return_dicts)):
+            returnParam = ParamObj(
+                name=return_dicts[y].get_text(),
+                type = return_types[y].get_text(),
+                desc = return_descs[y].get_text()
+            )
+            returns.append(returnParam);
+            
+        seealsoHtml = functionHtml.find("div",class_="seealso")
+        seealso_titles = seealsoHtml.find_all('a',class_="reference")
+        seealso_descs = seealsoHtml.find_all('dd')
+        seealsos = []
+        for z in range(len(seealso_titles)):
+            seealso = Seealso(
+                title=seealso_titles[z].get_text(),
+                desc=seealso_descs[z].get_text(),
+                url = seealso_titles[z]["href"]
+            )
+            seealsos.append(seealso)
+
         examples = functionHtml.find("div",class_="highlight")
-        print(title)
-        print(html_decode(method))
-        print(html_decode(summary))
         return ApiDetail(
             html_decode(title),
             html_decode(method),
             html_decode(summary),
             params,
-            returns=[returns],
-            seealsos=[seealso],
-            examples=[examples])
+            returns,
+            seealsos,
+            examples)
 
     # 解释出图片信息内容
     def _write_by_template(self, data):
